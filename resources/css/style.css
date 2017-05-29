@@ -86,6 +86,8 @@ nav li{
 .product-square{
   border: 4px solid black;
   width:30%;
+  display:flex;
+  flex-direction:column;
 }
 
 .product-image{
@@ -152,10 +154,16 @@ footer{
     display:none;
   }
 
+  nav{
+    width:100%;
+    display:flex;
+  }
+
   .mobile-nav{
     display:block;
     text-align:center;
     padding:0.75em 0;
+    width:100%;
   }
 
   #thermal-glasses-display{
@@ -166,6 +174,15 @@ footer{
     width:47%;
   }
 
+  .product-grid{
+    width:100%;
+  }
+
+  .information{
+    display:flex;
+    width:100%;
+  }
+
 }
 
 @media only screen and (max-width:470px){
@@ -173,10 +190,14 @@ footer{
     height:15rem;
     }
 
+  nav{
+    width:100%;
+  }
     .mobile-nav{
       display:block;
       text-align:center;
       padding:0.75em 0;
+      width:100%;
     }
 
   .banner-text{
@@ -204,10 +225,26 @@ footer{
   .product-grid .information {
   flex-wrap: wrap;
   justify-content: center;
-    align-items: center;
+  align-items: center;
   }
 
   footer{
     text-align:center;
   }
+
+  .location{
+    width:90%;
+    display:block;
+    margin: 0.5em auto;
+  }
+
+  .hours{
+    width:90%;
+    display:block;
+  }
+
+  .information{
+    flex-direction:column;
+  }
+
 }
