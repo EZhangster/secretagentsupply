@@ -139,7 +139,7 @@ nav li{
 }
 
 footer{
-  padding:5rem;
+  padding:5rem 0;
   text-align:left;
   background:black;
   justify-content:space-between;
